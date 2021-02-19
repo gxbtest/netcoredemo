@@ -1,0 +1,67 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30621.155
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebDemo", "WebDemo\WebDemo.csproj", "{16C267F2-27BC-4EED-8219-7914CE80DE1F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BimTech.Core", "BimTech.Core", "{7141CABF-0F37-4552-A43E-461294204BC3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BimTech.Core.Common", "BimTech.Core.Common\BimTech.Core.Common.csproj", "{1E950CBD-1B68-45FB-B6B2-DF9832882D2A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BimTech.IModuleServices", "BimTech.IModuleServices", "{A8875F26-6B94-4414-9D8F-1A3D3A0B9F94}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BimTech.Modules", "BimTech.Modules", "{7FC6390F-A686-42CF-B9E6-FEC627FC95CE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BimTech.IModuleServices.Test", "BimTech.IModuleServices.Test\BimTech.IModuleServices.Test.csproj", "{5396F874-BB42-45CC-B5E4-B626DB7522CE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BimTech.Modules.Test", "BimTech.Modules.Test\BimTech.Modules.Test.csproj", "{F10BB2EE-C166-4F7C-B585-A9C94B459608}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BimTech.Core.CPlatform", "BimTech.Core.CPlatform\BimTech.Core.CPlatform.csproj", "{EEFBCB7A-AB32-44BA-BD04-CB8DC8B5E768}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KestrelDemo", "KestrelDemo\KestrelDemo.csproj", "{C5FA5883-5A78-4E0D-8218-B3902B6562B1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{16C267F2-27BC-4EED-8219-7914CE80DE1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16C267F2-27BC-4EED-8219-7914CE80DE1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16C267F2-27BC-4EED-8219-7914CE80DE1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16C267F2-27BC-4EED-8219-7914CE80DE1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E950CBD-1B68-45FB-B6B2-DF9832882D2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E950CBD-1B68-45FB-B6B2-DF9832882D2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E950CBD-1B68-45FB-B6B2-DF9832882D2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E950CBD-1B68-45FB-B6B2-DF9832882D2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5396F874-BB42-45CC-B5E4-B626DB7522CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5396F874-BB42-45CC-B5E4-B626DB7522CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5396F874-BB42-45CC-B5E4-B626DB7522CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5396F874-BB42-45CC-B5E4-B626DB7522CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F10BB2EE-C166-4F7C-B585-A9C94B459608}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F10BB2EE-C166-4F7C-B585-A9C94B459608}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F10BB2EE-C166-4F7C-B585-A9C94B459608}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F10BB2EE-C166-4F7C-B585-A9C94B459608}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEFBCB7A-AB32-44BA-BD04-CB8DC8B5E768}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEFBCB7A-AB32-44BA-BD04-CB8DC8B5E768}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEFBCB7A-AB32-44BA-BD04-CB8DC8B5E768}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEFBCB7A-AB32-44BA-BD04-CB8DC8B5E768}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5FA5883-5A78-4E0D-8218-B3902B6562B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5FA5883-5A78-4E0D-8218-B3902B6562B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5FA5883-5A78-4E0D-8218-B3902B6562B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5FA5883-5A78-4E0D-8218-B3902B6562B1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1E950CBD-1B68-45FB-B6B2-DF9832882D2A} = {7141CABF-0F37-4552-A43E-461294204BC3}
+		{5396F874-BB42-45CC-B5E4-B626DB7522CE} = {A8875F26-6B94-4414-9D8F-1A3D3A0B9F94}
+		{F10BB2EE-C166-4F7C-B585-A9C94B459608} = {7FC6390F-A686-42CF-B9E6-FEC627FC95CE}
+		{EEFBCB7A-AB32-44BA-BD04-CB8DC8B5E768} = {7141CABF-0F37-4552-A43E-461294204BC3}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ADD581DC-9493-409F-956B-4DD185BDAC35}
+	EndGlobalSection
+EndGlobal

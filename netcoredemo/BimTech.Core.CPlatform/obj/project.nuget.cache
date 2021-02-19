@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "ono2vsmBFRieyBgCNEjAP/9jTZeQxSB31KAO4Oj/msdHLkCa4DKozfp8qGAEoKHqpGWRA8HAp0T8XJ6S10kmeA==",
+  "success": true,
+  "projectFilePath": "F:\\Projects\\netcoredemo\\netcoredemo\\BimTech.Core.CPlatform\\BimTech.Core.CPlatform.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.extensions.dependencymodel\\5.0.0\\microsoft.extensions.dependencymodel.5.0.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\system.text.encodings.web\\5.0.0\\system.text.encodings.web.5.0.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\system.text.json\\5.0.0\\system.text.json.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,9 @@
+F:\Projects\netcoredemo\netcoredemo\BimTech.Modules.Test\bin\Debug\netcoreapp3.1\BimTech.Modules.Test.deps.json
+F:\Projects\netcoredemo\netcoredemo\BimTech.Modules.Test\bin\Debug\netcoreapp3.1\BimTech.Modules.Test.dll
+F:\Projects\netcoredemo\netcoredemo\BimTech.Modules.Test\bin\Debug\netcoreapp3.1\BimTech.Modules.Test.pdb
+F:\Projects\netcoredemo\netcoredemo\BimTech.Modules.Test\obj\Debug\netcoreapp3.1\BimTech.Modules.Test.csprojAssemblyReference.cache
+F:\Projects\netcoredemo\netcoredemo\BimTech.Modules.Test\obj\Debug\netcoreapp3.1\BimTech.Modules.Test.AssemblyInfoInputs.cache
+F:\Projects\netcoredemo\netcoredemo\BimTech.Modules.Test\obj\Debug\netcoreapp3.1\BimTech.Modules.Test.AssemblyInfo.cs
+F:\Projects\netcoredemo\netcoredemo\BimTech.Modules.Test\obj\Debug\netcoreapp3.1\BimTech.Modules.Test.csproj.CoreCompileInputs.cache
+F:\Projects\netcoredemo\netcoredemo\BimTech.Modules.Test\obj\Debug\netcoreapp3.1\BimTech.Modules.Test.dll
+F:\Projects\netcoredemo\netcoredemo\BimTech.Modules.Test\obj\Debug\netcoreapp3.1\BimTech.Modules.Test.pdb

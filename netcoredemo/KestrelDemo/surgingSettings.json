@@ -1,0 +1,18 @@
+{
+  "Surging": {
+    "Ip": "127.0.0.1",
+    "Ports": {
+      "HttpPort": "668",
+      "WSPort": "96",
+      "MQTTPort": "97",
+      "GrpcPort": "95"
+    }
+  },
+  "Consul": {
+    "ConnectionString": "127.0.0.1:8500,192.168.40.115:8500", // "127.0.0.1:8500,127.0.0.1:9500",
+    "SessionTimeout": "50",
+    "RoutePath": "",
+    "ReloadOnChange": true,
+    "EnableChildrenMonitor": false
+  }
+}

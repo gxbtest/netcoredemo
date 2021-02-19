@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "BimTech.Modules.Test/1.0.0": {
+        "runtime": {
+          "BimTech.Modules.Test.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BimTech.Modules.Test/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

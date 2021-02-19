@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BimTech.Core.Common\BimTech.Core.Common.csproj" />
+    <ProjectReference Include="..\BimTech.IModuleServices.Test\BimTech.IModuleServices.Test.csproj" />
+  </ItemGroup>
+
+</Project>

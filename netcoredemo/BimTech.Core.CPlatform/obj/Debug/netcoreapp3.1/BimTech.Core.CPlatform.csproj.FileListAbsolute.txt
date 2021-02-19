@@ -1,0 +1,9 @@
+F:\Projects\netcoredemo\netcoredemo\BimTech.Core.CPlatform\bin\Debug\netcoreapp3.1\BimTech.Core.CPlatform.deps.json
+F:\Projects\netcoredemo\netcoredemo\BimTech.Core.CPlatform\bin\Debug\netcoreapp3.1\BimTech.Core.CPlatform.dll
+F:\Projects\netcoredemo\netcoredemo\BimTech.Core.CPlatform\bin\Debug\netcoreapp3.1\BimTech.Core.CPlatform.pdb
+F:\Projects\netcoredemo\netcoredemo\BimTech.Core.CPlatform\obj\Debug\netcoreapp3.1\BimTech.Core.CPlatform.csprojAssemblyReference.cache
+F:\Projects\netcoredemo\netcoredemo\BimTech.Core.CPlatform\obj\Debug\netcoreapp3.1\BimTech.Core.CPlatform.AssemblyInfoInputs.cache
+F:\Projects\netcoredemo\netcoredemo\BimTech.Core.CPlatform\obj\Debug\netcoreapp3.1\BimTech.Core.CPlatform.AssemblyInfo.cs
+F:\Projects\netcoredemo\netcoredemo\BimTech.Core.CPlatform\obj\Debug\netcoreapp3.1\BimTech.Core.CPlatform.dll
+F:\Projects\netcoredemo\netcoredemo\BimTech.Core.CPlatform\obj\Debug\netcoreapp3.1\BimTech.Core.CPlatform.pdb
+F:\Projects\netcoredemo\netcoredemo\BimTech.Core.CPlatform\obj\Debug\netcoreapp3.1\BimTech.Core.CPlatform.csproj.CoreCompileInputs.cache

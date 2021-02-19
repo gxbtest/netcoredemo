@@ -1,0 +1,9 @@
+F:\Projects\netcoredemo\netcoredemo\BimTech.Core.Common\bin\Debug\netcoreapp3.1\BimTech.Core.Common.deps.json
+F:\Projects\netcoredemo\netcoredemo\BimTech.Core.Common\bin\Debug\netcoreapp3.1\BimTech.Core.Common.dll
+F:\Projects\netcoredemo\netcoredemo\BimTech.Core.Common\bin\Debug\netcoreapp3.1\BimTech.Core.Common.pdb
+F:\Projects\netcoredemo\netcoredemo\BimTech.Core.Common\obj\Debug\netcoreapp3.1\BimTech.Core.Common.AssemblyInfoInputs.cache
+F:\Projects\netcoredemo\netcoredemo\BimTech.Core.Common\obj\Debug\netcoreapp3.1\BimTech.Core.Common.AssemblyInfo.cs
+F:\Projects\netcoredemo\netcoredemo\BimTech.Core.Common\obj\Debug\netcoreapp3.1\BimTech.Core.Common.dll
+F:\Projects\netcoredemo\netcoredemo\BimTech.Core.Common\obj\Debug\netcoreapp3.1\BimTech.Core.Common.pdb
+F:\Projects\netcoredemo\netcoredemo\BimTech.Core.Common\obj\Debug\netcoreapp3.1\BimTech.Core.Common.csprojAssemblyReference.cache
+F:\Projects\netcoredemo\netcoredemo\BimTech.Core.Common\obj\Debug\netcoreapp3.1\BimTech.Core.Common.csproj.CoreCompileInputs.cache
