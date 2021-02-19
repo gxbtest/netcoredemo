@@ -13,7 +13,7 @@ using Microsoft.AspNetCore.Http;
 using System.Threading;
 using System.Text;
 
-namespace aa
+namespace KestrelDemo
 {
     class Program
     {
@@ -21,7 +21,6 @@ namespace aa
         {
             try
             {
-                //111
                 var host = new WebHostBuilder()
                     .Configure()
                     .ConfigureSurging()
