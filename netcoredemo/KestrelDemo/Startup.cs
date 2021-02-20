@@ -11,6 +11,8 @@ using Microsoft.AspNetCore.Hosting.Server.Features;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using BimTech.Core.CPlatform.Routing;
+using BimTech.Core.ServiceHosting.Extensions;
 
 namespace KestrelDemo
 {
@@ -35,6 +37,7 @@ namespace KestrelDemo
             //SettingsOptions settingsOptions = AppConfig.settingsOptions;
             //app.UseStaticFiles();
             //app.UseMvc();
+           
             app.Run(async (context) =>
             {
                 context.Response.Headers.Add("Content-Type", "application/json;charset=utf-8");
@@ -50,8 +53,10 @@ namespace KestrelDemo
         /// <param name="services"></param>
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddConsulService();
             services.AddRuntime();
-            //services.AddMvcCore();
+            services.AddCoreService();
+          
         }
     }
 }

@@ -1,5 +1,8 @@
-﻿using System;
+﻿using BimTech.Core.CPlatform.Attributes;
+using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Reflection;
 using System.Text;
 
 namespace BimTech.Core.CPlatform.Runtime.Server.Implementation
@@ -20,7 +23,21 @@ namespace BimTech.Core.CPlatform.Runtime.Server.Implementation
 
         public IEnumerable<ServiceEntry> GetALLEntries()
         {
-            throw new NotImplementedException();
+            var services = _types.Where(i =>
+            {
+                var typeInfo = i.GetTypeInfo();
+                return typeInfo.IsInterface && typeInfo.GetCustomAttribute<ServiceBundleAttribute>() != null;
+            }).Distinct().ToArray();
+            //if (_logger.IsEnabled(LogLevel.Information))
+            //{
+            //    _logger.LogInformation($"发现了以下服务：{string.Join(",", services.Select(i => i.ToString()))}。");
+            //}
+            var entries = new List<ServiceEntry>();
+            foreach (var service in services)
+            {
+                entries.AddRange(_clrServiceEntryFactory.CreateServiceEntry(service));
+            }
+            return entries;
         }
 
         public IEnumerable<ServiceEntry> GetEntries()
@@ -36,7 +53,12 @@ namespace BimTech.Core.CPlatform.Runtime.Server.Implementation
 
         public IEnumerable<Type> GetTypes()
         {
-            throw new NotImplementedException();
+            var services = _types.Where(i =>
+            {
+                var typeInfo = i.GetTypeInfo();
+                return typeInfo.IsInterface && typeInfo.GetCustomAttribute<ServiceBundleAttribute>() != null;
+            }).Distinct().ToArray();
+            return services;
         }
     }
 }

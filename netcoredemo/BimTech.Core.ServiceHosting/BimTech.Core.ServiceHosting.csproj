@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BimTech.Core.Common\BimTech.Core.Common.csproj" />
+    <ProjectReference Include="..\BimTech.Core.Consul\BimTech.Core.Consul.csproj" />
+    <ProjectReference Include="..\BimTech.Core.CPlatform\BimTech.Core.CPlatform.csproj" />
+  </ItemGroup>
+
+</Project>

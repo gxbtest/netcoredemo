@@ -7,3 +7,10 @@ F:\Projects\netcoredemo\netcoredemo\BimTech.Modules.Test\obj\Debug\netcoreapp3.1
 F:\Projects\netcoredemo\netcoredemo\BimTech.Modules.Test\obj\Debug\netcoreapp3.1\BimTech.Modules.Test.csproj.CoreCompileInputs.cache
 F:\Projects\netcoredemo\netcoredemo\BimTech.Modules.Test\obj\Debug\netcoreapp3.1\BimTech.Modules.Test.dll
 F:\Projects\netcoredemo\netcoredemo\BimTech.Modules.Test\obj\Debug\netcoreapp3.1\BimTech.Modules.Test.pdb
+F:\Projects\netcoredemo\netcoredemo\BimTech.Modules.Test\bin\Debug\netcoreapp3.1\BimTech.Core.Common.dll
+F:\Projects\netcoredemo\netcoredemo\BimTech.Modules.Test\bin\Debug\netcoreapp3.1\BimTech.Core.CPlatform.dll
+F:\Projects\netcoredemo\netcoredemo\BimTech.Modules.Test\bin\Debug\netcoreapp3.1\BimTech.IModuleServices.Test.dll
+F:\Projects\netcoredemo\netcoredemo\BimTech.Modules.Test\bin\Debug\netcoreapp3.1\BimTech.IModuleServices.Test.pdb
+F:\Projects\netcoredemo\netcoredemo\BimTech.Modules.Test\bin\Debug\netcoreapp3.1\BimTech.Core.Common.pdb
+F:\Projects\netcoredemo\netcoredemo\BimTech.Modules.Test\bin\Debug\netcoreapp3.1\BimTech.Core.CPlatform.pdb
+F:\Projects\netcoredemo\netcoredemo\BimTech.Modules.Test\obj\Debug\netcoreapp3.1\BimTech.Modules.Test.csproj.CopyComplete

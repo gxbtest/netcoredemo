@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 
 namespace BimTech.Core.CPlatform.Runtime.Server.Implementation
@@ -20,12 +21,17 @@ namespace BimTech.Core.CPlatform.Runtime.Server.Implementation
 
         public IEnumerable<ServiceEntry> GetAllEntries()
         {
-            throw new NotImplementedException();
+            return _allEntries;
         }
 
+        /// <summary>
+        /// 获取服务条目集合。
+        /// </summary>
+        /// <returns>服务条目集合。</returns>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public IEnumerable<ServiceEntry> GetEntries()
         {
-            throw new NotImplementedException();
+            return _serviceEntries;
         }
 
         public void UpdateEntries(IEnumerable<IServiceEntryProvider> providers)

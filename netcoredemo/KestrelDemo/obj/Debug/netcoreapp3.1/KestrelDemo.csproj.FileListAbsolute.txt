@@ -93,8 +93,6 @@ F:\Projects\netcoredemo\netcoredemo\KestrelDemo\bin\Debug\netcoreapp3.1\BimTech.
 F:\Projects\netcoredemo\netcoredemo\KestrelDemo\obj\Debug\netcoreapp3.1\KestrelDemo.csprojAssemblyReference.cache
 F:\Projects\netcoredemo\netcoredemo\KestrelDemo\obj\Debug\netcoreapp3.1\KestrelDemo.AssemblyInfoInputs.cache
 F:\Projects\netcoredemo\netcoredemo\KestrelDemo\obj\Debug\netcoreapp3.1\KestrelDemo.AssemblyInfo.cs
-F:\Projects\netcoredemo\netcoredemo\KestrelDemo\obj\Debug\netcoreapp3.1\KestrelDemo.csproj.CoreCompileInputs.cache
-F:\Projects\netcoredemo\netcoredemo\KestrelDemo\obj\Debug\netcoreapp3.1\KestrelDemo.MvcApplicationPartsAssemblyInfo.cache
 F:\Projects\netcoredemo\netcoredemo\KestrelDemo\obj\Debug\netcoreapp3.1\KestrelDemo.RazorTargetAssemblyInfo.cache
 F:\Projects\netcoredemo\netcoredemo\KestrelDemo\obj\Debug\netcoreapp3.1\KestrelDemo.csproj.CopyComplete
 F:\Projects\netcoredemo\netcoredemo\KestrelDemo\obj\Debug\netcoreapp3.1\staticwebassets\KestrelDemo.StaticWebAssets.Manifest.cache
@@ -102,3 +100,15 @@ F:\Projects\netcoredemo\netcoredemo\KestrelDemo\obj\Debug\netcoreapp3.1\staticwe
 F:\Projects\netcoredemo\netcoredemo\KestrelDemo\obj\Debug\netcoreapp3.1\KestrelDemo.dll
 F:\Projects\netcoredemo\netcoredemo\KestrelDemo\obj\Debug\netcoreapp3.1\KestrelDemo.pdb
 F:\Projects\netcoredemo\netcoredemo\KestrelDemo\obj\Debug\netcoreapp3.1\KestrelDemo.genruntimeconfig.cache
+F:\Projects\netcoredemo\netcoredemo\KestrelDemo\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+F:\Projects\netcoredemo\netcoredemo\KestrelDemo\bin\Debug\netcoreapp3.1\Autofac.dll
+F:\Projects\netcoredemo\netcoredemo\KestrelDemo\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+F:\Projects\netcoredemo\netcoredemo\KestrelDemo\obj\Debug\netcoreapp3.1\KestrelDemo.csproj.CoreCompileInputs.cache
+F:\Projects\netcoredemo\netcoredemo\KestrelDemo\obj\Debug\netcoreapp3.1\KestrelDemo.MvcApplicationPartsAssemblyInfo.cache
+F:\Projects\netcoredemo\netcoredemo\KestrelDemo\bin\Debug\netcoreapp3.1\BimTech.Modules.Test.dll
+F:\Projects\netcoredemo\netcoredemo\KestrelDemo\bin\Debug\netcoreapp3.1\BimTech.Modules.Test.pdb
+F:\Projects\netcoredemo\netcoredemo\KestrelDemo\bin\Debug\netcoreapp3.1\Consul.dll
+F:\Projects\netcoredemo\netcoredemo\KestrelDemo\bin\Debug\netcoreapp3.1\BimTech.Core.Consul.dll
+F:\Projects\netcoredemo\netcoredemo\KestrelDemo\bin\Debug\netcoreapp3.1\BimTech.Core.ServiceHosting.dll
+F:\Projects\netcoredemo\netcoredemo\KestrelDemo\bin\Debug\netcoreapp3.1\BimTech.Core.ServiceHosting.pdb
+F:\Projects\netcoredemo\netcoredemo\KestrelDemo\bin\Debug\netcoreapp3.1\BimTech.Core.Consul.pdb

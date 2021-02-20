@@ -1,6 +1,11 @@
 {
   "Surging": {
     "Ip": "127.0.0.1",
+    "Port": 98,
+    "WanIp": "192.168.249.103",
+    "MappingIP": "",
+    "MappingPort": 0,
+    "Weight": 20,
     "Ports": {
       "HttpPort": "668",
       "WSPort": "96",
@@ -9,9 +14,8 @@
     }
   },
   "Consul": {
-    "ConnectionString": "127.0.0.1:8500,192.168.40.115:8500", // "127.0.0.1:8500,127.0.0.1:9500",
+    "ConnectionString": "127.0.0.1:8500", // "127.0.0.1:8500,127.0.0.1:9500",
     "SessionTimeout": "50",
-    "RoutePath": "",
     "ReloadOnChange": true,
     "EnableChildrenMonitor": false
   }

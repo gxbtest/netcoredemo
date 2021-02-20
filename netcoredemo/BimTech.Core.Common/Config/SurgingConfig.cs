@@ -27,7 +27,7 @@ namespace BimTech.Core.Common.Config
     {
         public Surging Surging { get; set; }
 
-        public Consul Consul { get; set; }
+        public ConsulOption Consul { get; set; }
 
     }
 
@@ -40,6 +40,16 @@ namespace BimTech.Core.Common.Config
         /// 启动Ip
         /// </summary>
         public string Ip { get; set; }
+
+        public int Port { get; set; }
+
+        public int Weight { get; set; }
+
+        public string WanIp { get; set; }
+
+        public string MappingIP { get; set; }
+
+        public int MappingPort { get; set; }
 
         /// <summary>
         /// 各种协议端口号
@@ -58,20 +68,27 @@ namespace BimTech.Core.Common.Config
         public int GrpcPort { get; set; }
     }
 
-    public class Consul
+    public class ConsulOption
     {
-        /// <summary>
-        /// consul连接字符串
-        /// </summary>
-        public string ConnectionString { get; set; }
+        public string SessionTimeout { get; set; }
 
-        public int SessionTimeout { get; set; }
+        public string ConnectionString { get; set; }
 
         public string RoutePath { get; set; }
 
-        public bool ReloadOnChange { get; set; }
+        public string SubscriberPath { get; set; }
 
-        public bool EnableChildrenMonitor { get; set; }
+        public string CommandPath { get; set; }
+
+        public string CachePath { get; set; }
+
+        public string MqttRoutePath { get; set; }
+
+        public string ReloadOnChange { get; set; }
+
+        public string EnableChildrenMonitor { get; set; }
+
+        public int? LockDelay { get; set; }
     }
 
 }

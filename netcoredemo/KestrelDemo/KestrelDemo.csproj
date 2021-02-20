@@ -5,8 +5,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Autofac" Version="6.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\BimTech.Core.Common\BimTech.Core.Common.csproj" />
+    <ProjectReference Include="..\BimTech.Core.ServiceHosting\BimTech.Core.ServiceHosting.csproj" />
     <ProjectReference Include="..\BimTech.IModuleServices.Test\BimTech.IModuleServices.Test.csproj" />
+    <ProjectReference Include="..\BimTech.Modules.Test\BimTech.Modules.Test.csproj" />
   </ItemGroup>
 
 </Project>

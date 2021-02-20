@@ -10,3 +10,5 @@ F:\Projects\netcoredemo\netcoredemo\BimTech.IModuleServices.Test\obj\Debug\netco
 F:\Projects\netcoredemo\netcoredemo\BimTech.IModuleServices.Test\obj\Debug\netcoreapp3.1\BimTech.IModuleServices.Test.csproj.CopyComplete
 F:\Projects\netcoredemo\netcoredemo\BimTech.IModuleServices.Test\obj\Debug\netcoreapp3.1\BimTech.IModuleServices.Test.dll
 F:\Projects\netcoredemo\netcoredemo\BimTech.IModuleServices.Test\obj\Debug\netcoreapp3.1\BimTech.IModuleServices.Test.pdb
+F:\Projects\netcoredemo\netcoredemo\BimTech.IModuleServices.Test\bin\Debug\netcoreapp3.1\BimTech.Core.Common.dll
+F:\Projects\netcoredemo\netcoredemo\BimTech.IModuleServices.Test\bin\Debug\netcoreapp3.1\BimTech.Core.Common.pdb

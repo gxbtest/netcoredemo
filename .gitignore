@@ -3,3 +3,6 @@
 ################################################################################
 
 /netcoredemo/BimTech.Core.Consul/bin/Debug/netcoreapp3.1
+/netcoredemo/BimTech.Core.Consul/obj
+/netcoredemo/BimTech.Core.ServiceHosting/bin/Debug/netcoreapp3.1
+/netcoredemo/BimTech.Core.ServiceHosting/obj

@@ -21,6 +21,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BimTech.Core.CPlatform", "B
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KestrelDemo", "KestrelDemo\KestrelDemo.csproj", "{C5FA5883-5A78-4E0D-8218-B3902B6562B1}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BimTech.Core.Consul", "BimTech.Core.Consul\BimTech.Core.Consul.csproj", "{CCAB276C-AAA0-4290-ABC5-3B705CE3F15C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BimTech.Core.ServiceHosting", "BimTech.Core.ServiceHosting\BimTech.Core.ServiceHosting.csproj", "{4A425474-C046-4888-889A-ED25C323787A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +55,14 @@ Global
 		{C5FA5883-5A78-4E0D-8218-B3902B6562B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C5FA5883-5A78-4E0D-8218-B3902B6562B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C5FA5883-5A78-4E0D-8218-B3902B6562B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCAB276C-AAA0-4290-ABC5-3B705CE3F15C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCAB276C-AAA0-4290-ABC5-3B705CE3F15C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCAB276C-AAA0-4290-ABC5-3B705CE3F15C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCAB276C-AAA0-4290-ABC5-3B705CE3F15C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A425474-C046-4888-889A-ED25C323787A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A425474-C046-4888-889A-ED25C323787A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A425474-C046-4888-889A-ED25C323787A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A425474-C046-4888-889A-ED25C323787A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -60,6 +72,8 @@ Global
 		{5396F874-BB42-45CC-B5E4-B626DB7522CE} = {A8875F26-6B94-4414-9D8F-1A3D3A0B9F94}
 		{F10BB2EE-C166-4F7C-B585-A9C94B459608} = {7FC6390F-A686-42CF-B9E6-FEC627FC95CE}
 		{EEFBCB7A-AB32-44BA-BD04-CB8DC8B5E768} = {7141CABF-0F37-4552-A43E-461294204BC3}
+		{CCAB276C-AAA0-4290-ABC5-3B705CE3F15C} = {7141CABF-0F37-4552-A43E-461294204BC3}
+		{4A425474-C046-4888-889A-ED25C323787A} = {7141CABF-0F37-4552-A43E-461294204BC3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {ADD581DC-9493-409F-956B-4DD185BDAC35}
