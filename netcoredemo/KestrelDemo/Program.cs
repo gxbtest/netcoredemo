@@ -17,7 +17,6 @@ namespace KestrelDemo
 {
     class Program
     {
-        //ces
         public static void Main(string[] args)
         {
             try
