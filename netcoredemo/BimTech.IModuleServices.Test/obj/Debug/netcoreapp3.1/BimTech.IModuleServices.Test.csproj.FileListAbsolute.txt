@@ -12,3 +12,17 @@ F:\Projects\netcoredemo\netcoredemo\BimTech.IModuleServices.Test\obj\Debug\netco
 F:\Projects\netcoredemo\netcoredemo\BimTech.IModuleServices.Test\obj\Debug\netcoreapp3.1\BimTech.IModuleServices.Test.pdb
 F:\Projects\netcoredemo\netcoredemo\BimTech.IModuleServices.Test\bin\Debug\netcoreapp3.1\BimTech.Core.Common.dll
 F:\Projects\netcoredemo\netcoredemo\BimTech.IModuleServices.Test\bin\Debug\netcoreapp3.1\BimTech.Core.Common.pdb
+D:\Projects\netcoredemo\BimTech.IModuleServices.Test\bin\Debug\netcoreapp3.1\BimTech.IModuleServices.Test.deps.json
+D:\Projects\netcoredemo\BimTech.IModuleServices.Test\bin\Debug\netcoreapp3.1\BimTech.IModuleServices.Test.dll
+D:\Projects\netcoredemo\BimTech.IModuleServices.Test\bin\Debug\netcoreapp3.1\BimTech.IModuleServices.Test.pdb
+D:\Projects\netcoredemo\BimTech.IModuleServices.Test\bin\Debug\netcoreapp3.1\BimTech.Core.Common.dll
+D:\Projects\netcoredemo\BimTech.IModuleServices.Test\bin\Debug\netcoreapp3.1\BimTech.Core.CPlatform.dll
+D:\Projects\netcoredemo\BimTech.IModuleServices.Test\bin\Debug\netcoreapp3.1\BimTech.Core.CPlatform.pdb
+D:\Projects\netcoredemo\BimTech.IModuleServices.Test\bin\Debug\netcoreapp3.1\BimTech.Core.Common.pdb
+D:\Projects\netcoredemo\BimTech.IModuleServices.Test\obj\Debug\netcoreapp3.1\BimTech.IModuleServices.Test.csprojAssemblyReference.cache
+D:\Projects\netcoredemo\BimTech.IModuleServices.Test\obj\Debug\netcoreapp3.1\BimTech.IModuleServices.Test.AssemblyInfoInputs.cache
+D:\Projects\netcoredemo\BimTech.IModuleServices.Test\obj\Debug\netcoreapp3.1\BimTech.IModuleServices.Test.AssemblyInfo.cs
+D:\Projects\netcoredemo\BimTech.IModuleServices.Test\obj\Debug\netcoreapp3.1\BimTech.IModuleServices.Test.csproj.CoreCompileInputs.cache
+D:\Projects\netcoredemo\BimTech.IModuleServices.Test\obj\Debug\netcoreapp3.1\BimTech.IModuleServices.Test.csproj.CopyComplete
+D:\Projects\netcoredemo\BimTech.IModuleServices.Test\obj\Debug\netcoreapp3.1\BimTech.IModuleServices.Test.dll
+D:\Projects\netcoredemo\BimTech.IModuleServices.Test\obj\Debug\netcoreapp3.1\BimTech.IModuleServices.Test.pdb

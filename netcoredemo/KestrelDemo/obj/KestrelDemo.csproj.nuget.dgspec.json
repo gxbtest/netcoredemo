@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Projects\\netcoredemo\\netcoredemo\\KestrelDemo\\KestrelDemo.csproj": {}
+    "D:\\Projects\\netcoredemo\\KestrelDemo\\KestrelDemo.csproj": {}
   },
   "projects": {
-    "F:\\Projects\\netcoredemo\\netcoredemo\\BimTech.Core.Common\\BimTech.Core.Common.csproj": {
+    "D:\\Projects\\netcoredemo\\BimTech.Core.Common\\BimTech.Core.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Projects\\netcoredemo\\netcoredemo\\BimTech.Core.Common\\BimTech.Core.Common.csproj",
+        "projectUniqueName": "D:\\Projects\\netcoredemo\\BimTech.Core.Common\\BimTech.Core.Common.csproj",
         "projectName": "BimTech.Core.Common",
-        "projectPath": "F:\\Projects\\netcoredemo\\netcoredemo\\BimTech.Core.Common\\BimTech.Core.Common.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "F:\\Projects\\netcoredemo\\netcoredemo\\BimTech.Core.Common\\obj\\",
+        "projectPath": "D:\\Projects\\netcoredemo\\BimTech.Core.Common\\BimTech.Core.Common.csproj",
+        "packagesPath": "C:\\Users\\29391\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\netcoredemo\\BimTech.Core.Common\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\29391\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -29,6 +26,7 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -40,6 +38,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "Microsoft.AspNetCore.Server.Kestrel": {
               "target": "Package",
@@ -77,24 +76,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "F:\\Projects\\netcoredemo\\netcoredemo\\BimTech.Core.Consul\\BimTech.Core.Consul.csproj": {
+    "D:\\Projects\\netcoredemo\\BimTech.Core.Consul\\BimTech.Core.Consul.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Projects\\netcoredemo\\netcoredemo\\BimTech.Core.Consul\\BimTech.Core.Consul.csproj",
+        "projectUniqueName": "D:\\Projects\\netcoredemo\\BimTech.Core.Consul\\BimTech.Core.Consul.csproj",
         "projectName": "BimTech.Core.Consul",
-        "projectPath": "F:\\Projects\\netcoredemo\\netcoredemo\\BimTech.Core.Consul\\BimTech.Core.Consul.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "F:\\Projects\\netcoredemo\\netcoredemo\\BimTech.Core.Consul\\obj\\",
+        "projectPath": "D:\\Projects\\netcoredemo\\BimTech.Core.Consul\\BimTech.Core.Consul.csproj",
+        "packagesPath": "C:\\Users\\29391\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\netcoredemo\\BimTech.Core.Consul\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\29391\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -106,9 +102,10 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "F:\\Projects\\netcoredemo\\netcoredemo\\BimTech.Core.CPlatform\\BimTech.Core.CPlatform.csproj": {
-                "projectPath": "F:\\Projects\\netcoredemo\\netcoredemo\\BimTech.Core.CPlatform\\BimTech.Core.CPlatform.csproj"
+              "D:\\Projects\\netcoredemo\\BimTech.Core.CPlatform\\BimTech.Core.CPlatform.csproj": {
+                "projectPath": "D:\\Projects\\netcoredemo\\BimTech.Core.CPlatform\\BimTech.Core.CPlatform.csproj"
               }
             }
           }
@@ -121,6 +118,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "Consul": {
               "target": "Package",
@@ -142,24 +140,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "F:\\Projects\\netcoredemo\\netcoredemo\\BimTech.Core.CPlatform\\BimTech.Core.CPlatform.csproj": {
+    "D:\\Projects\\netcoredemo\\BimTech.Core.CPlatform\\BimTech.Core.CPlatform.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Projects\\netcoredemo\\netcoredemo\\BimTech.Core.CPlatform\\BimTech.Core.CPlatform.csproj",
+        "projectUniqueName": "D:\\Projects\\netcoredemo\\BimTech.Core.CPlatform\\BimTech.Core.CPlatform.csproj",
         "projectName": "BimTech.Core.CPlatform",
-        "projectPath": "F:\\Projects\\netcoredemo\\netcoredemo\\BimTech.Core.CPlatform\\BimTech.Core.CPlatform.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "F:\\Projects\\netcoredemo\\netcoredemo\\BimTech.Core.CPlatform\\obj\\",
+        "projectPath": "D:\\Projects\\netcoredemo\\BimTech.Core.CPlatform\\BimTech.Core.CPlatform.csproj",
+        "packagesPath": "C:\\Users\\29391\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\netcoredemo\\BimTech.Core.CPlatform\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\29391\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -171,9 +166,10 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "F:\\Projects\\netcoredemo\\netcoredemo\\BimTech.Core.Common\\BimTech.Core.Common.csproj": {
-                "projectPath": "F:\\Projects\\netcoredemo\\netcoredemo\\BimTech.Core.Common\\BimTech.Core.Common.csproj"
+              "D:\\Projects\\netcoredemo\\BimTech.Core.Common\\BimTech.Core.Common.csproj": {
+                "projectPath": "D:\\Projects\\netcoredemo\\BimTech.Core.Common\\BimTech.Core.Common.csproj"
               }
             }
           }
@@ -186,6 +182,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "Microsoft.Extensions.DependencyInjection.Abstractions": {
               "target": "Package",
@@ -215,24 +212,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "F:\\Projects\\netcoredemo\\netcoredemo\\BimTech.Core.ServiceHosting\\BimTech.Core.ServiceHosting.csproj": {
+    "D:\\Projects\\netcoredemo\\BimTech.Core.ServiceHosting\\BimTech.Core.ServiceHosting.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Projects\\netcoredemo\\netcoredemo\\BimTech.Core.ServiceHosting\\BimTech.Core.ServiceHosting.csproj",
+        "projectUniqueName": "D:\\Projects\\netcoredemo\\BimTech.Core.ServiceHosting\\BimTech.Core.ServiceHosting.csproj",
         "projectName": "BimTech.Core.ServiceHosting",
-        "projectPath": "F:\\Projects\\netcoredemo\\netcoredemo\\BimTech.Core.ServiceHosting\\BimTech.Core.ServiceHosting.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "F:\\Projects\\netcoredemo\\netcoredemo\\BimTech.Core.ServiceHosting\\obj\\",
+        "projectPath": "D:\\Projects\\netcoredemo\\BimTech.Core.ServiceHosting\\BimTech.Core.ServiceHosting.csproj",
+        "packagesPath": "C:\\Users\\29391\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\netcoredemo\\BimTech.Core.ServiceHosting\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\29391\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -244,15 +238,16 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "F:\\Projects\\netcoredemo\\netcoredemo\\BimTech.Core.Common\\BimTech.Core.Common.csproj": {
-                "projectPath": "F:\\Projects\\netcoredemo\\netcoredemo\\BimTech.Core.Common\\BimTech.Core.Common.csproj"
+              "D:\\Projects\\netcoredemo\\BimTech.Core.Common\\BimTech.Core.Common.csproj": {
+                "projectPath": "D:\\Projects\\netcoredemo\\BimTech.Core.Common\\BimTech.Core.Common.csproj"
               },
-              "F:\\Projects\\netcoredemo\\netcoredemo\\BimTech.Core.Consul\\BimTech.Core.Consul.csproj": {
-                "projectPath": "F:\\Projects\\netcoredemo\\netcoredemo\\BimTech.Core.Consul\\BimTech.Core.Consul.csproj"
+              "D:\\Projects\\netcoredemo\\BimTech.Core.Consul\\BimTech.Core.Consul.csproj": {
+                "projectPath": "D:\\Projects\\netcoredemo\\BimTech.Core.Consul\\BimTech.Core.Consul.csproj"
               },
-              "F:\\Projects\\netcoredemo\\netcoredemo\\BimTech.Core.CPlatform\\BimTech.Core.CPlatform.csproj": {
-                "projectPath": "F:\\Projects\\netcoredemo\\netcoredemo\\BimTech.Core.CPlatform\\BimTech.Core.CPlatform.csproj"
+              "D:\\Projects\\netcoredemo\\BimTech.Core.CPlatform\\BimTech.Core.CPlatform.csproj": {
+                "projectPath": "D:\\Projects\\netcoredemo\\BimTech.Core.CPlatform\\BimTech.Core.CPlatform.csproj"
               }
             }
           }
@@ -265,6 +260,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "imports": [
             "net461",
             "net462",
@@ -280,24 +276,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "F:\\Projects\\netcoredemo\\netcoredemo\\BimTech.IModuleServices.Test\\BimTech.IModuleServices.Test.csproj": {
+    "D:\\Projects\\netcoredemo\\BimTech.IModuleServices.Test\\BimTech.IModuleServices.Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Projects\\netcoredemo\\netcoredemo\\BimTech.IModuleServices.Test\\BimTech.IModuleServices.Test.csproj",
+        "projectUniqueName": "D:\\Projects\\netcoredemo\\BimTech.IModuleServices.Test\\BimTech.IModuleServices.Test.csproj",
         "projectName": "BimTech.IModuleServices.Test",
-        "projectPath": "F:\\Projects\\netcoredemo\\netcoredemo\\BimTech.IModuleServices.Test\\BimTech.IModuleServices.Test.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "F:\\Projects\\netcoredemo\\netcoredemo\\BimTech.IModuleServices.Test\\obj\\",
+        "projectPath": "D:\\Projects\\netcoredemo\\BimTech.IModuleServices.Test\\BimTech.IModuleServices.Test.csproj",
+        "packagesPath": "C:\\Users\\29391\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\netcoredemo\\BimTech.IModuleServices.Test\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\29391\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -309,9 +302,10 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "F:\\Projects\\netcoredemo\\netcoredemo\\BimTech.Core.CPlatform\\BimTech.Core.CPlatform.csproj": {
-                "projectPath": "F:\\Projects\\netcoredemo\\netcoredemo\\BimTech.Core.CPlatform\\BimTech.Core.CPlatform.csproj"
+              "D:\\Projects\\netcoredemo\\BimTech.Core.CPlatform\\BimTech.Core.CPlatform.csproj": {
+                "projectPath": "D:\\Projects\\netcoredemo\\BimTech.Core.CPlatform\\BimTech.Core.CPlatform.csproj"
               }
             }
           }
@@ -324,6 +318,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "imports": [
             "net461",
             "net462",
@@ -339,24 +334,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "F:\\Projects\\netcoredemo\\netcoredemo\\BimTech.Modules.Test\\BimTech.Modules.Test.csproj": {
+    "D:\\Projects\\netcoredemo\\BimTech.Modules.Test\\BimTech.Modules.Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Projects\\netcoredemo\\netcoredemo\\BimTech.Modules.Test\\BimTech.Modules.Test.csproj",
+        "projectUniqueName": "D:\\Projects\\netcoredemo\\BimTech.Modules.Test\\BimTech.Modules.Test.csproj",
         "projectName": "BimTech.Modules.Test",
-        "projectPath": "F:\\Projects\\netcoredemo\\netcoredemo\\BimTech.Modules.Test\\BimTech.Modules.Test.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "F:\\Projects\\netcoredemo\\netcoredemo\\BimTech.Modules.Test\\obj\\",
+        "projectPath": "D:\\Projects\\netcoredemo\\BimTech.Modules.Test\\BimTech.Modules.Test.csproj",
+        "packagesPath": "C:\\Users\\29391\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\netcoredemo\\BimTech.Modules.Test\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\29391\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -368,9 +360,10 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "F:\\Projects\\netcoredemo\\netcoredemo\\BimTech.IModuleServices.Test\\BimTech.IModuleServices.Test.csproj": {
-                "projectPath": "F:\\Projects\\netcoredemo\\netcoredemo\\BimTech.IModuleServices.Test\\BimTech.IModuleServices.Test.csproj"
+              "D:\\Projects\\netcoredemo\\BimTech.IModuleServices.Test\\BimTech.IModuleServices.Test.csproj": {
+                "projectPath": "D:\\Projects\\netcoredemo\\BimTech.IModuleServices.Test\\BimTech.IModuleServices.Test.csproj"
               }
             }
           }
@@ -383,6 +376,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "imports": [
             "net461",
             "net462",
@@ -398,24 +392,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "F:\\Projects\\netcoredemo\\netcoredemo\\KestrelDemo\\KestrelDemo.csproj": {
+    "D:\\Projects\\netcoredemo\\KestrelDemo\\KestrelDemo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Projects\\netcoredemo\\netcoredemo\\KestrelDemo\\KestrelDemo.csproj",
+        "projectUniqueName": "D:\\Projects\\netcoredemo\\KestrelDemo\\KestrelDemo.csproj",
         "projectName": "KestrelDemo",
-        "projectPath": "F:\\Projects\\netcoredemo\\netcoredemo\\KestrelDemo\\KestrelDemo.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "F:\\Projects\\netcoredemo\\netcoredemo\\KestrelDemo\\obj\\",
+        "projectPath": "D:\\Projects\\netcoredemo\\KestrelDemo\\KestrelDemo.csproj",
+        "packagesPath": "C:\\Users\\29391\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\netcoredemo\\KestrelDemo\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\29391\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -427,18 +418,19 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "F:\\Projects\\netcoredemo\\netcoredemo\\BimTech.Core.Common\\BimTech.Core.Common.csproj": {
-                "projectPath": "F:\\Projects\\netcoredemo\\netcoredemo\\BimTech.Core.Common\\BimTech.Core.Common.csproj"
+              "D:\\Projects\\netcoredemo\\BimTech.Core.Common\\BimTech.Core.Common.csproj": {
+                "projectPath": "D:\\Projects\\netcoredemo\\BimTech.Core.Common\\BimTech.Core.Common.csproj"
               },
-              "F:\\Projects\\netcoredemo\\netcoredemo\\BimTech.Core.ServiceHosting\\BimTech.Core.ServiceHosting.csproj": {
-                "projectPath": "F:\\Projects\\netcoredemo\\netcoredemo\\BimTech.Core.ServiceHosting\\BimTech.Core.ServiceHosting.csproj"
+              "D:\\Projects\\netcoredemo\\BimTech.Core.ServiceHosting\\BimTech.Core.ServiceHosting.csproj": {
+                "projectPath": "D:\\Projects\\netcoredemo\\BimTech.Core.ServiceHosting\\BimTech.Core.ServiceHosting.csproj"
               },
-              "F:\\Projects\\netcoredemo\\netcoredemo\\BimTech.IModuleServices.Test\\BimTech.IModuleServices.Test.csproj": {
-                "projectPath": "F:\\Projects\\netcoredemo\\netcoredemo\\BimTech.IModuleServices.Test\\BimTech.IModuleServices.Test.csproj"
+              "D:\\Projects\\netcoredemo\\BimTech.IModuleServices.Test\\BimTech.IModuleServices.Test.csproj": {
+                "projectPath": "D:\\Projects\\netcoredemo\\BimTech.IModuleServices.Test\\BimTech.IModuleServices.Test.csproj"
               },
-              "F:\\Projects\\netcoredemo\\netcoredemo\\BimTech.Modules.Test\\BimTech.Modules.Test.csproj": {
-                "projectPath": "F:\\Projects\\netcoredemo\\netcoredemo\\BimTech.Modules.Test\\BimTech.Modules.Test.csproj"
+              "D:\\Projects\\netcoredemo\\BimTech.Modules.Test\\BimTech.Modules.Test.csproj": {
+                "projectPath": "D:\\Projects\\netcoredemo\\BimTech.Modules.Test\\BimTech.Modules.Test.csproj"
               }
             }
           }
@@ -451,6 +443,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "Autofac": {
               "target": "Package",
@@ -475,7 +468,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     }
