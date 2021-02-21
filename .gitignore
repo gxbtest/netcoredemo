@@ -6,3 +6,13 @@
 /netcoredemo/BimTech.Core.Consul/obj
 /netcoredemo/BimTech.Core.ServiceHosting/bin/Debug/netcoreapp3.1
 /netcoredemo/BimTech.Core.ServiceHosting/obj
+/netcoredemo/BimTech.Core.Common/bin/Debug/netcoreapp3.1
+/netcoredemo/BimTech.Core.Common/obj
+/netcoredemo/BimTech.Core.CPlatform/bin/Debug/netcoreapp3.1
+/netcoredemo/BimTech.Core.CPlatform/obj/Debug/netcoreapp3.1
+/netcoredemo/BimTech.Core.CPlatform/obj
+/netcoredemo/BimTech.IModuleServices.Test/bin/Debug/netcoreapp3.1
+/netcoredemo/BimTech.IModuleServices.Test/obj/Debug/netcoreapp3.1
+/netcoredemo/BimTech.IModuleServices.Test/obj
+/netcoredemo/BimTech.Modules.Test
+/netcoredemo/KestrelDemo
