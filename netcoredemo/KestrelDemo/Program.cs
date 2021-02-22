@@ -12,6 +12,9 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using System.Threading;
 using System.Text;
+using Autofac;
+using BimTech.Core.CPlatform.Utilities;
+using BimTech.Core.CPlatform;
 
 namespace KestrelDemo
 {

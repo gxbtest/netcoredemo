@@ -38,17 +38,59 @@ new ConcurrentDictionary<string, ServiceRoute>();
 
         public ValueTask<ServiceRoute> GetLocalRouteByPathRegex(string path)
         {
-            throw new NotImplementedException();
+            var addess = NetUtils.GetHostAddress();
+
+            if (_localRoutes.Count == 0)
+            {
+                _localRoutes.AddRange(_serviceEntryManager.GetEntries().Select(i =>
+                {
+                    i.Descriptor.Token = _serviceTokenGenerator.GetToken();
+                    return new ServiceRoute
+                    {
+                        Address = new[] { addess },
+                        ServiceDescriptor = i.Descriptor
+                    };
+                }).ToList());
+            }
+
+            path = path.ToLower();
+            _serviceRoute.TryGetValue(path, out ServiceRoute route);
+            if (route == null)
+            {
+                return new ValueTask<ServiceRoute>(GetRouteByPathRegexAsync(_localRoutes, path));
+            }
+            else
+            {
+                return new ValueTask<ServiceRoute>(route);
+            }
         }
 
         public ValueTask<ServiceRoute> GetRouteByPath(string path)
         {
-            throw new NotImplementedException();
+            _serviceRoute.TryGetValue(path.ToLower(), out ServiceRoute route);
+            if (route == null)
+            {
+                return new ValueTask<ServiceRoute>(GetRouteByPathAsync(path));
+            }
+            else
+            {
+                return new ValueTask<ServiceRoute>(route);
+            }
         }
 
-        public ValueTask<ServiceRoute> GetRouteByPathRegex(string path)
+        public async ValueTask<ServiceRoute> GetRouteByPathRegex(string path)
         {
-            throw new NotImplementedException();
+            path = path.ToLower();
+            _serviceRoute.TryGetValue(path, out ServiceRoute route);
+            if (route == null)
+            {
+                var routes = await _serviceRouteManager.GetRoutesAsync();
+                return await GetRouteByPathRegexAsync(routes, path);
+            }
+            else
+            {
+                return route;
+            }
         }
 
         public Task<ServiceRoute> Locate(string serviceId)
@@ -76,12 +118,59 @@ new ConcurrentDictionary<string, ServiceRoute>();
             await _serviceRouteManager.SetRoutesAsync(addressDescriptors);
         }
 
-        public Task<ServiceRoute> SearchRoute(string path)
+        public async Task<ServiceRoute> SearchRoute(string path)
         {
-            throw new NotImplementedException();
+            return await SearchRouteAsync(path);
         }
 
         #region 私有方法
+        private async Task<ServiceRoute> GetRouteByPathRegexAsync(IEnumerable<ServiceRoute> routes, string path)
+        {
+            var pattern = "/{.*?}";
+
+            var route = routes.FirstOrDefault(i =>
+            {
+                var routePath = Regex.Replace(i.ServiceDescriptor.RoutePath, pattern, "");
+                var newPath = path.Replace(routePath, "");
+                return (newPath.StartsWith("/") || newPath.Length == 0) && i.ServiceDescriptor.RoutePath.Split("/").Length == path.Split("/").Length && !i.ServiceDescriptor.GetMetadata<bool>("IsOverload");
+            });
+
+
+            if (route == null)
+            {
+                Console.WriteLine($"根据服务路由路径：{path}，找不到相关服务信息。");
+            }
+            else
+              if (!Regex.IsMatch(route.ServiceDescriptor.RoutePath, pattern)) _serviceRoute.GetOrAdd(path, route);
+            return await Task.FromResult(route);
+        }
+
+        private async Task<ServiceRoute> GetRouteByPathAsync(string path)
+        {
+            var routes = await _serviceRouteManager.GetRoutesAsync();
+            var route = routes.FirstOrDefault(i => String.Compare(i.ServiceDescriptor.RoutePath, path, true) == 0 && !i.ServiceDescriptor.GetMetadata<bool>("IsOverload"));
+            if (route == null)
+            {
+                Console.WriteLine($"根据服务路由路径：{path}，找不到相关服务信息。");
+            }
+            else
+                _serviceRoute.GetOrAdd(path, route);
+            return route;
+        }
+
+        private async Task<ServiceRoute> SearchRouteAsync(string path)
+        {
+            var routes = await _serviceRouteManager.GetRoutesAsync();
+            var route = routes.FirstOrDefault(i => String.Compare(i.ServiceDescriptor.RoutePath, path, true) == 0);
+            if (route == null)
+            {
+                Console.WriteLine($"根据服务路由路径：{path}，找不到相关服务信息。");
+            }
+            else
+                _serviceRoute.GetOrAdd(path, route);
+            return route;
+        }
+
         private static string GetCacheKey(ServiceDescriptor descriptor)
         {
             return descriptor.Id;

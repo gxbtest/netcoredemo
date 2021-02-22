@@ -9,6 +9,10 @@ using BimTech.Core.Consul.Internal.Cluster.Implementation.Selectors.Implementati
 using BimTech.Core.Consul.Internal.Implementation;
 using BimTech.Core.Consul.WatcherProvider;
 using BimTech.Core.Consul.WatcherProvider.Implementation;
+using BimTech.Core.CPlatform.Convertibles;
+using BimTech.Core.CPlatform.Convertibles.Implementation;
+using BimTech.Core.CPlatform.Filters;
+using BimTech.Core.CPlatform.Filters.Implementation;
 using BimTech.Core.CPlatform.Ids;
 using BimTech.Core.CPlatform.Ids.Implementation;
 using BimTech.Core.CPlatform.Routing;
@@ -19,6 +23,10 @@ using BimTech.Core.CPlatform.Runtime.Server;
 using BimTech.Core.CPlatform.Runtime.Server.Implementation;
 using BimTech.Core.CPlatform.Serialization;
 using BimTech.Core.CPlatform.Serialization.Implementation;
+using BimTech.Core.CPlatform.Transport;
+using BimTech.Core.CPlatform.Validation;
+using BimTech.Core.CPlatform.Validation.Implementation;
+using BimTech.Core.KestrelHttpServer;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyModel;
@@ -29,33 +37,51 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Text.RegularExpressions;
+using BimTech.Core.CPlatform;
+using BimTech.Core.CPlatform.Utilities;
+using Autofac;
 
 namespace BimTech.Core.ServiceHosting.Extensions
 {
     public static class ServiceCollectionExtensions
     {
         private static List<Assembly> _referenceAssembly = new List<Assembly>();
+
         public static IServiceCollection AddRuntime(this IServiceCollection services)
         {
-            ServiceTokenGenerator serviceTokenGenerator = new ServiceTokenGenerator();
-            serviceTokenGenerator.GeneratorToken("True");
-            //注册服务token生成接口 
-            services.AddSingleton(typeof(IServiceTokenGenerator), serviceTokenGenerator);
-            //注册服务ID生成实例 
-            services.AddSingleton<IServiceIdGenerator, DefaultServiceIdGenerator>();
-          
-            //注册服务器路由接口 
-            services.AddSingleton<IServiceRouteProvider, DefaultServiceRouteProvider>();
-          
-            services.AddSingleton<IClrServiceEntryFactory, ClrServiceEntryFactory>();
+
+
+
             var assemblys = GetReferenceAssembly();
             var types = assemblys.SelectMany(i => i.ExportedTypes).ToArray();
+          
+            ServiceTokenGenerator serviceTokenGenerator = new ServiceTokenGenerator();
+            serviceTokenGenerator.GeneratorToken("True");
+            services.AddSingleton(typeof(CPlatformContainer), new CPlatformContainer(ServiceLocator.Current));
+            //注册服务token生成接口 
+            services.AddSingleton(typeof(IServiceTokenGenerator), serviceTokenGenerator);
+         
+
+            //注册服务器路由接口 
+            services.AddSingleton<IServiceRouteProvider, DefaultServiceRouteProvider>();
+            //注册服务ID生成实例 
+            services.AddSingleton<IServiceIdGenerator, DefaultServiceIdGenerator>();
+            services.AddSingleton<ITypeConvertibleService, DefaultTypeConvertibleService>();
+            services.AddSingleton<IValidationProcessor, DefaultValidationProcessor>();
             var provider = services.BuildServiceProvider();
-          var attributeServiceEntryProvider=  new AttributeServiceEntryProvider(types, provider.GetService<IClrServiceEntryFactory>());
+            var clrServiceEntryFactory = new ClrServiceEntryFactory(provider.GetService<CPlatformContainer>(), provider.GetService<IServiceIdGenerator>(), provider.GetService<ITypeConvertibleService>(), provider.GetService<IValidationProcessor>());
+            services.AddSingleton(typeof(IClrServiceEntryFactory), clrServiceEntryFactory);
+            provider = services.BuildServiceProvider();
+            //services.AddSingleton<IClrServiceEntryFactory, ClrServiceEntryFactory>();
+            var attributeServiceEntryProvider=  new AttributeServiceEntryProvider(types, provider.GetService<IClrServiceEntryFactory>());
             services.AddSingleton(typeof(IServiceEntryProvider), attributeServiceEntryProvider);
             services.AddSingleton<IServiceEntryManager, DefaultServiceEntryManager>();
+            services.AddSingleton<IServiceEntryLocate, DefaultServiceEntryLocate>();
            
-           
+            services.AddSingleton<IAuthorizationFilter, AuthorizationAttribute>();
+            services.AddSingleton<IFilter, AuthorizationAttribute>();
+            services.AddSingleton<IServiceExecutor, HttpExecutor>();
+            services.AddSingleton<IMessageListener, HttpMessageListener>();
             return services;
         }
 

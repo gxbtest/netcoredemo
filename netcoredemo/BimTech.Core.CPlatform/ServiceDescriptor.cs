@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BimTech.Core.CPlatform.Filters.Implementation;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -109,6 +110,29 @@ namespace BimTech.Core.CPlatform
         public static bool DisableNetwork(this ServiceDescriptor descriptor)
         {
             return descriptor.GetMetadata("DisableNetwork", false);
+        }
+
+        /// <summary>
+        /// 获取授权类型
+        /// </summary>
+        /// <param name="descriptor">服务描述符。</param>
+        /// <returns>服务描述符。</returns>
+        public static string AuthType(this ServiceDescriptor descriptor)
+        {
+            return descriptor.GetMetadata("AuthType", "");
+        }
+
+
+        /// <summary>
+        /// 设置授权类型
+        /// </summary>
+        /// <param name="descriptor">服务描述符。</param>
+        /// <param name="authType">授权类型</param>
+        /// <returns>服务描述符。</returns>
+        public static ServiceDescriptor AuthType(this ServiceDescriptor descriptor, AuthorizationType authType)
+        {
+            descriptor.Metadatas["AuthType"] = authType.ToString();
+            return descriptor;
         }
 
         /// <summary>

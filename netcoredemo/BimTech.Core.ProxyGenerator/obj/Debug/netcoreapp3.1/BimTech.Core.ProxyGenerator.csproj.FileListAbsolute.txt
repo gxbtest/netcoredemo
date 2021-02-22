@@ -1,0 +1,9 @@
+F:\Projects\netcoredemo\netcoredemo\BimTech.Core.ProxyGenerator\bin\Debug\netcoreapp3.1\BimTech.Core.ProxyGenerator.deps.json
+F:\Projects\netcoredemo\netcoredemo\BimTech.Core.ProxyGenerator\bin\Debug\netcoreapp3.1\BimTech.Core.ProxyGenerator.dll
+F:\Projects\netcoredemo\netcoredemo\BimTech.Core.ProxyGenerator\bin\Debug\netcoreapp3.1\BimTech.Core.ProxyGenerator.pdb
+F:\Projects\netcoredemo\netcoredemo\BimTech.Core.ProxyGenerator\obj\Debug\netcoreapp3.1\BimTech.Core.ProxyGenerator.csprojAssemblyReference.cache
+F:\Projects\netcoredemo\netcoredemo\BimTech.Core.ProxyGenerator\obj\Debug\netcoreapp3.1\BimTech.Core.ProxyGenerator.AssemblyInfoInputs.cache
+F:\Projects\netcoredemo\netcoredemo\BimTech.Core.ProxyGenerator\obj\Debug\netcoreapp3.1\BimTech.Core.ProxyGenerator.AssemblyInfo.cs
+F:\Projects\netcoredemo\netcoredemo\BimTech.Core.ProxyGenerator\obj\Debug\netcoreapp3.1\BimTech.Core.ProxyGenerator.csproj.CoreCompileInputs.cache
+F:\Projects\netcoredemo\netcoredemo\BimTech.Core.ProxyGenerator\obj\Debug\netcoreapp3.1\BimTech.Core.ProxyGenerator.dll
+F:\Projects\netcoredemo\netcoredemo\BimTech.Core.ProxyGenerator\obj\Debug\netcoreapp3.1\BimTech.Core.ProxyGenerator.pdb

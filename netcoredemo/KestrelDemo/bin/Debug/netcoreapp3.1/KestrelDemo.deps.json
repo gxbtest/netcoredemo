@@ -24,8 +24,9 @@
     ".NETCoreApp,Version=v3.1": {
       "KestrelDemo/1.0.0": {
         "dependencies": {
-          "Autofac": "6.1.0",
+          "BimTech.Core.CPlatform": "1.0.0",
           "BimTech.Core.Common": "1.0.0",
+          "BimTech.Core.KestrelHttpServer": "1.0.0",
           "BimTech.Core.ServiceHosting": "1.0.0",
           "BimTech.IModuleServices.Test": "1.0.0",
           "BimTech.Modules.Test": "1.0.0",
@@ -318,6 +319,21 @@
         },
         "compile": {
           "lib/netstandard2.1/Autofac.dll": {}
+        }
+      },
+      "Autofac.Extensions.DependencyInjection/7.1.0": {
+        "dependencies": {
+          "Autofac": "6.1.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.1/Autofac.Extensions.DependencyInjection.dll": {
+            "assemblyVersion": "7.1.0.0",
+            "fileVersion": "7.1.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.1/Autofac.Extensions.DependencyInjection.dll": {}
         }
       },
       "Consul/1.6.1.1": {
@@ -811,6 +827,8 @@
       },
       "BimTech.Core.CPlatform/1.0.0": {
         "dependencies": {
+          "Autofac": "6.1.0",
+          "Autofac.Extensions.DependencyInjection": "7.1.0",
           "BimTech.Core.Common": "1.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0",
           "Microsoft.Extensions.DependencyModel": "5.0.0",
@@ -823,11 +841,33 @@
           "BimTech.Core.CPlatform.dll": {}
         }
       },
+      "BimTech.Core.KestrelHttpServer/1.0.0": {
+        "dependencies": {
+          "BimTech.Core.CPlatform": "1.0.0",
+          "BimTech.Core.Common": "1.0.0",
+          "BimTech.Core.ProxyGenerator": "1.0.0"
+        },
+        "runtime": {
+          "BimTech.Core.KestrelHttpServer.dll": {}
+        },
+        "compile": {
+          "BimTech.Core.KestrelHttpServer.dll": {}
+        }
+      },
+      "BimTech.Core.ProxyGenerator/1.0.0": {
+        "runtime": {
+          "BimTech.Core.ProxyGenerator.dll": {}
+        },
+        "compile": {
+          "BimTech.Core.ProxyGenerator.dll": {}
+        }
+      },
       "BimTech.Core.ServiceHosting/1.0.0": {
         "dependencies": {
           "BimTech.Core.CPlatform": "1.0.0",
           "BimTech.Core.Common": "1.0.0",
-          "BimTech.Core.Consul": "1.0.0"
+          "BimTech.Core.Consul": "1.0.0",
+          "BimTech.Core.KestrelHttpServer": "1.0.0"
         },
         "runtime": {
           "BimTech.Core.ServiceHosting.dll": {}
@@ -2487,6 +2527,13 @@
       "path": "autofac/6.1.0",
       "hashPath": "autofac.6.1.0.nupkg.sha512"
     },
+    "Autofac.Extensions.DependencyInjection/7.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-nm6rZREZ9tjdKXu9cmT69zHkZODagjCPlRRCOhiS1VqFFis9LQnMl18L4OYr8yfCW1WAQkFDD2CNaK/kF5Eqeg==",
+      "path": "autofac.extensions.dependencyinjection/7.1.0",
+      "hashPath": "autofac.extensions.dependencyinjection.7.1.0.nupkg.sha512"
+    },
     "Consul/1.6.1.1": {
       "type": "package",
       "serviceable": true,
@@ -2848,6 +2895,16 @@
       "sha512": ""
     },
     "BimTech.Core.CPlatform/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BimTech.Core.KestrelHttpServer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BimTech.Core.ProxyGenerator/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -1,0 +1,16 @@
+F:\Projects\netcoredemo\netcoredemo\BimTech.Core.KestrelHttpServer\bin\Debug\netcoreapp3.1\BimTech.Core.KestrelHttpServer.deps.json
+F:\Projects\netcoredemo\netcoredemo\BimTech.Core.KestrelHttpServer\bin\Debug\netcoreapp3.1\BimTech.Core.KestrelHttpServer.dll
+F:\Projects\netcoredemo\netcoredemo\BimTech.Core.KestrelHttpServer\bin\Debug\netcoreapp3.1\BimTech.Core.KestrelHttpServer.pdb
+F:\Projects\netcoredemo\netcoredemo\BimTech.Core.KestrelHttpServer\bin\Debug\netcoreapp3.1\BimTech.Core.Common.dll
+F:\Projects\netcoredemo\netcoredemo\BimTech.Core.KestrelHttpServer\bin\Debug\netcoreapp3.1\BimTech.Core.CPlatform.dll
+F:\Projects\netcoredemo\netcoredemo\BimTech.Core.KestrelHttpServer\bin\Debug\netcoreapp3.1\BimTech.Core.Common.pdb
+F:\Projects\netcoredemo\netcoredemo\BimTech.Core.KestrelHttpServer\bin\Debug\netcoreapp3.1\BimTech.Core.CPlatform.pdb
+F:\Projects\netcoredemo\netcoredemo\BimTech.Core.KestrelHttpServer\obj\Debug\netcoreapp3.1\BimTech.Core.KestrelHttpServer.csprojAssemblyReference.cache
+F:\Projects\netcoredemo\netcoredemo\BimTech.Core.KestrelHttpServer\obj\Debug\netcoreapp3.1\BimTech.Core.KestrelHttpServer.AssemblyInfoInputs.cache
+F:\Projects\netcoredemo\netcoredemo\BimTech.Core.KestrelHttpServer\obj\Debug\netcoreapp3.1\BimTech.Core.KestrelHttpServer.AssemblyInfo.cs
+F:\Projects\netcoredemo\netcoredemo\BimTech.Core.KestrelHttpServer\obj\Debug\netcoreapp3.1\BimTech.Core.KestrelHttpServer.csproj.CoreCompileInputs.cache
+F:\Projects\netcoredemo\netcoredemo\BimTech.Core.KestrelHttpServer\obj\Debug\netcoreapp3.1\BimTech.Core.KestrelHttpServer.csproj.CopyComplete
+F:\Projects\netcoredemo\netcoredemo\BimTech.Core.KestrelHttpServer\obj\Debug\netcoreapp3.1\BimTech.Core.KestrelHttpServer.dll
+F:\Projects\netcoredemo\netcoredemo\BimTech.Core.KestrelHttpServer\obj\Debug\netcoreapp3.1\BimTech.Core.KestrelHttpServer.pdb
+F:\Projects\netcoredemo\netcoredemo\BimTech.Core.KestrelHttpServer\bin\Debug\netcoreapp3.1\BimTech.Core.ProxyGenerator.dll
+F:\Projects\netcoredemo\netcoredemo\BimTech.Core.KestrelHttpServer\bin\Debug\netcoreapp3.1\BimTech.Core.ProxyGenerator.pdb

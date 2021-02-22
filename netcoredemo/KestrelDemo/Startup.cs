@@ -13,6 +13,10 @@ using System.Threading;
 using System.Threading.Tasks;
 using BimTech.Core.CPlatform.Routing;
 using BimTech.Core.ServiceHosting.Extensions;
+using BimTech.Core.KestrelHttpServer.Extensions;
+using System.ComponentModel;
+using Autofac;
+using BimTech.Core.CPlatform.Utilities;
 
 namespace KestrelDemo
 {
@@ -31,18 +35,9 @@ namespace KestrelDemo
         /// </summary>
         public void Configure(IApplicationBuilder app)
         {
-            //build = new ConfigurationBuilder();
-            //build.AddConfigFile(AppContext.BaseDirectory + "appsettings.json", false, true);
-            //build.Build().Bind(AppConfig.settingsOptions);
-            //SettingsOptions settingsOptions = AppConfig.settingsOptions;
-            //app.UseStaticFiles();
+            app.UseStaticFiles();
             //app.UseMvc();
-           
-            app.Run(async (context) =>
-            {
-                context.Response.Headers.Add("Content-Type", "application/json;charset=utf-8");
-                await context.Response.WriteAsync("123");
-            });
+            app.AppResolve();
         }
 
 
@@ -53,10 +48,25 @@ namespace KestrelDemo
         /// <param name="services"></param>
         public void ConfigureServices(IServiceCollection services)
         {
+            ConfigureServices1(services);
             services.AddConsulService();
             services.AddRuntime();
             services.AddCoreService();
           
+        }
+
+        /// <summary>
+        /// “¿¿µ◊¢»Î
+        /// </summary>
+        /// <param name="services"></param>
+        public Autofac.IContainer ConfigureServices1(IServiceCollection services)
+        {
+            var builder = new ContainerBuilder();
+            //services.AddConsulService();
+            //services.AddRuntime();
+            //services.AddCoreService();
+            ServiceLocator.Current = builder.Build();
+            return ServiceLocator.Current;
         }
     }
 }

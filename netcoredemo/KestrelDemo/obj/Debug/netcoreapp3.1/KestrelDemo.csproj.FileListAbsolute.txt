@@ -112,3 +112,8 @@ F:\Projects\netcoredemo\netcoredemo\KestrelDemo\bin\Debug\netcoreapp3.1\BimTech.
 F:\Projects\netcoredemo\netcoredemo\KestrelDemo\bin\Debug\netcoreapp3.1\BimTech.Core.ServiceHosting.dll
 F:\Projects\netcoredemo\netcoredemo\KestrelDemo\bin\Debug\netcoreapp3.1\BimTech.Core.ServiceHosting.pdb
 F:\Projects\netcoredemo\netcoredemo\KestrelDemo\bin\Debug\netcoreapp3.1\BimTech.Core.Consul.pdb
+F:\Projects\netcoredemo\netcoredemo\KestrelDemo\bin\Debug\netcoreapp3.1\BimTech.Core.KestrelHttpServer.dll
+F:\Projects\netcoredemo\netcoredemo\KestrelDemo\bin\Debug\netcoreapp3.1\BimTech.Core.KestrelHttpServer.pdb
+F:\Projects\netcoredemo\netcoredemo\KestrelDemo\bin\Debug\netcoreapp3.1\BimTech.Core.ProxyGenerator.dll
+F:\Projects\netcoredemo\netcoredemo\KestrelDemo\bin\Debug\netcoreapp3.1\BimTech.Core.ProxyGenerator.pdb
+F:\Projects\netcoredemo\netcoredemo\KestrelDemo\bin\Debug\netcoreapp3.1\Autofac.Extensions.DependencyInjection.dll

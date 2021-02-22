@@ -8,6 +8,7 @@
     <ProjectReference Include="..\BimTech.Core.Common\BimTech.Core.Common.csproj" />
     <ProjectReference Include="..\BimTech.Core.Consul\BimTech.Core.Consul.csproj" />
     <ProjectReference Include="..\BimTech.Core.CPlatform\BimTech.Core.CPlatform.csproj" />
+    <ProjectReference Include="..\BimTech.Core.KestrelHttpServer\BimTech.Core.KestrelHttpServer.csproj" />
   </ItemGroup>
 
 </Project>

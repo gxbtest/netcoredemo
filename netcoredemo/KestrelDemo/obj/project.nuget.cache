@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "pNtfIGZErNxH3lHpR/bwWWSeecQmNdiFvNgMJutrrKWERiPU9QEc9tiRhyRk3mqHEG/lOmh1j/W/QrEe5dzZzQ==",
+  "dgSpecHash": "NPQn0P7KQabOe9816bXu8oXsEw0+oXIXehTyNIKIklom6xlO3veC3f8kzNiFvmQ/ZDmybpaf0P0nFt5V+xVhwQ==",
   "success": true,
   "projectFilePath": "F:\\Projects\\netcoredemo\\netcoredemo\\KestrelDemo\\KestrelDemo.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrator\\.nuget\\packages\\autofac\\6.1.0\\autofac.6.1.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\autofac.extensions.dependencyinjection\\7.1.0\\autofac.extensions.dependencyinjection.7.1.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\consul\\1.6.1.1\\consul.1.6.1.1.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\libuv\\1.10.0\\libuv.1.10.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.connections.abstractions\\2.2.0\\microsoft.aspnetcore.connections.abstractions.2.2.0.nupkg.sha512",
