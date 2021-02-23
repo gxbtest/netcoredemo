@@ -588,6 +588,9 @@
         }
       },
       "BimTech.Core.ProxyGenerator/1.0.0": {
+        "dependencies": {
+          "BimTech.Core.CPlatform": "1.0.0"
+        },
         "runtime": {
           "BimTech.Core.ProxyGenerator.dll": {}
         }

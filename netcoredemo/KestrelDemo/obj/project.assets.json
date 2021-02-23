@@ -739,6 +739,9 @@
       "BimTech.Core.ProxyGenerator/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "BimTech.Core.CPlatform": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/BimTech.Core.ProxyGenerator.dll": {}
         },
@@ -779,6 +782,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
+          "BimTech.Core.ProxyGenerator": "1.0.0",
           "BimTech.IModuleServices.Test": "1.0.0"
         },
         "compile": {

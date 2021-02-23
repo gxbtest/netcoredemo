@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\BimTech.Core.ProxyGenerator\BimTech.Core.ProxyGenerator.csproj" />
     <ProjectReference Include="..\BimTech.IModuleServices.Test\BimTech.IModuleServices.Test.csproj" />
   </ItemGroup>
 

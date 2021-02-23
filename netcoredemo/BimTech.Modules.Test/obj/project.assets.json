@@ -695,6 +695,19 @@
           "bin/placeholder/BimTech.Core.CPlatform.dll": {}
         }
       },
+      "BimTech.Core.ProxyGenerator/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "BimTech.Core.CPlatform": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BimTech.Core.ProxyGenerator.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BimTech.Core.ProxyGenerator.dll": {}
+        }
+      },
       "BimTech.IModuleServices.Test/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
@@ -1799,6 +1812,11 @@
       "path": "../BimTech.Core.CPlatform/BimTech.Core.CPlatform.csproj",
       "msbuildProject": "../BimTech.Core.CPlatform/BimTech.Core.CPlatform.csproj"
     },
+    "BimTech.Core.ProxyGenerator/1.0.0": {
+      "type": "project",
+      "path": "../BimTech.Core.ProxyGenerator/BimTech.Core.ProxyGenerator.csproj",
+      "msbuildProject": "../BimTech.Core.ProxyGenerator/BimTech.Core.ProxyGenerator.csproj"
+    },
     "BimTech.IModuleServices.Test/1.0.0": {
       "type": "project",
       "path": "../BimTech.IModuleServices.Test/BimTech.IModuleServices.Test.csproj",
@@ -1807,6 +1825,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "BimTech.Core.ProxyGenerator >= 1.0.0",
       "BimTech.IModuleServices.Test >= 1.0.0"
     ]
   },
@@ -1840,6 +1859,9 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
+            "F:\\Projects\\netcoredemo\\netcoredemo\\BimTech.Core.ProxyGenerator\\BimTech.Core.ProxyGenerator.csproj": {
+              "projectPath": "F:\\Projects\\netcoredemo\\netcoredemo\\BimTech.Core.ProxyGenerator\\BimTech.Core.ProxyGenerator.csproj"
+            },
             "F:\\Projects\\netcoredemo\\netcoredemo\\BimTech.IModuleServices.Test\\BimTech.IModuleServices.Test.csproj": {
               "projectPath": "F:\\Projects\\netcoredemo\\netcoredemo\\BimTech.IModuleServices.Test\\BimTech.IModuleServices.Test.csproj"
             }

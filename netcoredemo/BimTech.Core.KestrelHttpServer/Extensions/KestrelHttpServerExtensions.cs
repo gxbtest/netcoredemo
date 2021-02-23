@@ -23,8 +23,6 @@ namespace BimTech.Core.KestrelHttpServer.Extensions
                 var serviceRouteProvider = (IServiceRouteProvider)app.ApplicationServices.GetService(typeof(IServiceRouteProvider));
                 var serviceExecutor = (IServiceExecutor)app.ApplicationServices.GetService(typeof(IServiceExecutor));
                 var sender = new HttpServerMessageSender(_serializer, context, new DiagnosticListener("BimTechDiagnosticListener"));
-                context.Response.Headers.Add("Content-Type", "application/json;charset=utf-8");
-
                 HttpMessageListener httpMessageListener = new HttpMessageListener(_serializer, serviceRouteProvider, serviceExecutor);
                 var actionFilters = app.ApplicationServices.GetServices<IActionFilter>();
                 await httpMessageListener.OnReceived(sender, messageId, context, actionFilters);

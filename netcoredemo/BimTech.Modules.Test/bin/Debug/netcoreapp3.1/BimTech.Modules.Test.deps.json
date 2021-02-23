@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v3.1": {
       "BimTech.Modules.Test/1.0.0": {
         "dependencies": {
+          "BimTech.Core.ProxyGenerator": "1.0.0",
           "BimTech.IModuleServices.Test": "1.0.0"
         },
         "runtime": {
@@ -585,6 +586,14 @@
           "BimTech.Core.CPlatform.dll": {}
         }
       },
+      "BimTech.Core.ProxyGenerator/1.0.0": {
+        "dependencies": {
+          "BimTech.Core.CPlatform": "1.0.0"
+        },
+        "runtime": {
+          "BimTech.Core.ProxyGenerator.dll": {}
+        }
+      },
       "BimTech.IModuleServices.Test/1.0.0": {
         "dependencies": {
           "BimTech.Core.CPlatform": "1.0.0"
@@ -964,6 +973,11 @@
       "sha512": ""
     },
     "BimTech.Core.CPlatform/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BimTech.Core.ProxyGenerator/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

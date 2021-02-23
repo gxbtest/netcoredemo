@@ -48,23 +48,20 @@ namespace KestrelDemo
         /// <param name="services"></param>
         public void ConfigureServices(IServiceCollection services)
         {
-            ConfigureServices1(services);
+            SetContainer();
             services.AddConsulService();
             services.AddRuntime();
             services.AddCoreService();
-          
         }
 
         /// <summary>
-        /// “¿¿µ◊¢»Î
+        /// ≈‰÷√»›∆˜
         /// </summary>
         /// <param name="services"></param>
-        public Autofac.IContainer ConfigureServices1(IServiceCollection services)
+        public Autofac.IContainer SetContainer()
         {
             var builder = new ContainerBuilder();
-            //services.AddConsulService();
-            //services.AddRuntime();
-            //services.AddCoreService();
+            builder =builder.RegisterServices();
             ServiceLocator.Current = builder.Build();
             return ServiceLocator.Current;
         }

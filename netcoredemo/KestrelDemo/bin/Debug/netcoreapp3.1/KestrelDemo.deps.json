@@ -855,6 +855,9 @@
         }
       },
       "BimTech.Core.ProxyGenerator/1.0.0": {
+        "dependencies": {
+          "BimTech.Core.CPlatform": "1.0.0"
+        },
         "runtime": {
           "BimTech.Core.ProxyGenerator.dll": {}
         },
@@ -889,6 +892,7 @@
       },
       "BimTech.Modules.Test/1.0.0": {
         "dependencies": {
+          "BimTech.Core.ProxyGenerator": "1.0.0",
           "BimTech.IModuleServices.Test": "1.0.0"
         },
         "runtime": {

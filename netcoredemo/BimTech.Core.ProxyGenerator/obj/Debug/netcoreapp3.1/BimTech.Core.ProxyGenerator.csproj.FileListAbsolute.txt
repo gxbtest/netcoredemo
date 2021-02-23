@@ -7,3 +7,8 @@ F:\Projects\netcoredemo\netcoredemo\BimTech.Core.ProxyGenerator\obj\Debug\netcor
 F:\Projects\netcoredemo\netcoredemo\BimTech.Core.ProxyGenerator\obj\Debug\netcoreapp3.1\BimTech.Core.ProxyGenerator.csproj.CoreCompileInputs.cache
 F:\Projects\netcoredemo\netcoredemo\BimTech.Core.ProxyGenerator\obj\Debug\netcoreapp3.1\BimTech.Core.ProxyGenerator.dll
 F:\Projects\netcoredemo\netcoredemo\BimTech.Core.ProxyGenerator\obj\Debug\netcoreapp3.1\BimTech.Core.ProxyGenerator.pdb
+F:\Projects\netcoredemo\netcoredemo\BimTech.Core.ProxyGenerator\bin\Debug\netcoreapp3.1\BimTech.Core.Common.dll
+F:\Projects\netcoredemo\netcoredemo\BimTech.Core.ProxyGenerator\bin\Debug\netcoreapp3.1\BimTech.Core.CPlatform.dll
+F:\Projects\netcoredemo\netcoredemo\BimTech.Core.ProxyGenerator\bin\Debug\netcoreapp3.1\BimTech.Core.CPlatform.pdb
+F:\Projects\netcoredemo\netcoredemo\BimTech.Core.ProxyGenerator\bin\Debug\netcoreapp3.1\BimTech.Core.Common.pdb
+F:\Projects\netcoredemo\netcoredemo\BimTech.Core.ProxyGenerator\obj\Debug\netcoreapp3.1\BimTech.Core.ProxyGenerator.csproj.CopyComplete

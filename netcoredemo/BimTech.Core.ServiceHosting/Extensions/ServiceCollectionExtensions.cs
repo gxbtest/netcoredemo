@@ -40,6 +40,7 @@ using System.Text.RegularExpressions;
 using BimTech.Core.CPlatform;
 using BimTech.Core.CPlatform.Utilities;
 using Autofac;
+using BimTech.Core.CPlatform.Ioc;
 
 namespace BimTech.Core.ServiceHosting.Extensions
 {
@@ -49,9 +50,6 @@ namespace BimTech.Core.ServiceHosting.Extensions
 
         public static IServiceCollection AddRuntime(this IServiceCollection services)
         {
-
-
-
             var assemblys = GetReferenceAssembly();
             var types = assemblys.SelectMany(i => i.ExportedTypes).ToArray();
           
@@ -60,8 +58,6 @@ namespace BimTech.Core.ServiceHosting.Extensions
             services.AddSingleton(typeof(CPlatformContainer), new CPlatformContainer(ServiceLocator.Current));
             //注册服务token生成接口 
             services.AddSingleton(typeof(IServiceTokenGenerator), serviceTokenGenerator);
-         
-
             //注册服务器路由接口 
             services.AddSingleton<IServiceRouteProvider, DefaultServiceRouteProvider>();
             //注册服务ID生成实例 
@@ -106,13 +102,14 @@ namespace BimTech.Core.ServiceHosting.Extensions
             services.AddSingleton<ISerializer<object>, StringObjectSerializer>();
             var provider = services.BuildServiceProvider();
             var configInfo = new ConfigInfo(null);
-          var defaultConsulClientProvider= new DefaultConsulClientProvider(GetConfigInfo(configInfo), provider.GetService<IHealthCheckService>(), provider.GetService<IConsulAddressSelector>());
+            var config = GetConfigInfo(configInfo);
+          var defaultConsulClientProvider= new DefaultConsulClientProvider(config, provider.GetService<IHealthCheckService>(), provider.GetService<IConsulAddressSelector>());
          
             services.AddSingleton(typeof(IConsulClientProvider), defaultConsulClientProvider);
-            var clientWatchManager = new ClientWatchManager(GetConfigInfo(configInfo));
+            var clientWatchManager = new ClientWatchManager(config);
             services.AddSingleton(typeof(IClientWatchManager), clientWatchManager);
             provider = services.BuildServiceProvider();
-            var consulServiceRouteManager = new ConsulServiceRouteManager(GetConfigInfo(configInfo), provider.GetService<ISerializer<byte[]>>(), provider.GetService<ISerializer<string>>(), provider.GetService<IClientWatchManager>(), provider.GetService<IServiceRouteFactory>(), provider.GetService<IServiceHeartbeatManager>(), provider.GetService<IConsulClientProvider>());
+            var consulServiceRouteManager = new ConsulServiceRouteManager(config, provider.GetService<ISerializer<byte[]>>(), provider.GetService<ISerializer<string>>(), provider.GetService<IClientWatchManager>(), provider.GetService<IServiceRouteFactory>(), provider.GetService<IServiceHeartbeatManager>(), provider.GetService<IConsulClientProvider>());
             services.AddSingleton(typeof(IServiceRouteManager), consulServiceRouteManager);
             return services;
         }
@@ -208,6 +205,61 @@ namespace BimTech.Core.ServiceHosting.Extensions
                 });
             }
             return result;
+        }
+
+        /// <summary>.
+        /// 依赖注入业务模块程序集 接口及接口实现
+        /// </summary>
+        /// <param name="builder">ioc容器</param>
+        /// <returns>返回注册模块信息</returns>
+        public static ContainerBuilder RegisterServices(this ContainerBuilder services, params string[] virtualPaths)
+        {
+            try
+            {
+                var referenceAssemblies = GetAssemblies(virtualPaths);
+                foreach (var assembly in referenceAssemblies)
+                {
+                    services.RegisterAssemblyTypes(assembly)
+                       //注入继承IServiceKey接口的所有接口
+                       .Where(t => typeof(IServiceKey).GetTypeInfo().IsAssignableFrom(t) && t.IsInterface)
+                       .AsImplementedInterfaces();
+                    services.RegisterAssemblyTypes(assembly)
+                 //注入实现IServiceBehavior接口并ModuleName为空的类，作为接口实现类
+                 .Where(t => !typeof(ISingleInstance).GetTypeInfo().IsAssignableFrom(t) &&
+                 typeof(IServiceBehavior).GetTypeInfo().IsAssignableFrom(t) && t.GetTypeInfo().GetCustomAttribute<ModuleNameAttribute>() == null).AsImplementedInterfaces();
+
+                    services.RegisterAssemblyTypes(assembly)
+             //注入实现IServiceBehavior接口并ModuleName为空的类，作为接口实现类
+             .Where(t => typeof(ISingleInstance).GetTypeInfo().IsAssignableFrom(t) &&
+             typeof(IServiceBehavior).GetTypeInfo().IsAssignableFrom(t) && t.GetTypeInfo().GetCustomAttribute<ModuleNameAttribute>() == null).SingleInstance().AsImplementedInterfaces();
+
+                    var types = assembly.GetTypes().Where(t => typeof(IServiceBehavior).GetTypeInfo().IsAssignableFrom(t) && t.GetTypeInfo().GetCustomAttribute<ModuleNameAttribute>() != null);
+                    foreach (var type in types)
+                    {
+                        var module = type.GetTypeInfo().GetCustomAttribute<ModuleNameAttribute>();
+                        //对ModuleName不为空的对象，找到第一个继承IServiceKey的接口并注入接口及实现
+                        var interfaceObj = type.GetInterfaces()
+                            .FirstOrDefault(t => typeof(IServiceKey).GetTypeInfo().IsAssignableFrom(t));
+                        if (interfaceObj != null)
+                        {
+                            services.RegisterType(type).AsImplementedInterfaces().Named(module.ModuleName, interfaceObj);
+                            services.RegisterType(type).Named(module.ModuleName, type);
+                        }
+                    }
+
+                }
+                return services;
+            }
+            catch (Exception ex)
+            {
+                if (ex is System.Reflection.ReflectionTypeLoadException)
+                {
+                    var typeLoadException = ex as ReflectionTypeLoadException;
+                    var loaderExceptions = typeLoadException.LoaderExceptions;
+                    throw loaderExceptions[0];
+                }
+                throw ex;
+            }
         }
 
         private static List<string> GetAllAssemblyFiles(string parentDir)

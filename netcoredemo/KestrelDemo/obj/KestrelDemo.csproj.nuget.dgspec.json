@@ -317,7 +317,11 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "projectReferences": {}
+            "projectReferences": {
+              "F:\\Projects\\netcoredemo\\netcoredemo\\BimTech.Core.CPlatform\\BimTech.Core.CPlatform.csproj": {
+                "projectPath": "F:\\Projects\\netcoredemo\\netcoredemo\\BimTech.Core.CPlatform\\BimTech.Core.CPlatform.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -500,6 +504,9 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
+              "F:\\Projects\\netcoredemo\\netcoredemo\\BimTech.Core.ProxyGenerator\\BimTech.Core.ProxyGenerator.csproj": {
+                "projectPath": "F:\\Projects\\netcoredemo\\netcoredemo\\BimTech.Core.ProxyGenerator\\BimTech.Core.ProxyGenerator.csproj"
+              },
               "F:\\Projects\\netcoredemo\\netcoredemo\\BimTech.IModuleServices.Test\\BimTech.IModuleServices.Test.csproj": {
                 "projectPath": "F:\\Projects\\netcoredemo\\netcoredemo\\BimTech.IModuleServices.Test\\BimTech.IModuleServices.Test.csproj"
               }
