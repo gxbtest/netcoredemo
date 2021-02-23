@@ -26,7 +26,6 @@ namespace BimTech.Core.KestrelHttpServer.Extensions
                 HttpMessageListener httpMessageListener = new HttpMessageListener(_serializer, serviceRouteProvider, serviceExecutor);
                 var actionFilters = app.ApplicationServices.GetServices<IActionFilter>();
                 await httpMessageListener.OnReceived(sender, messageId, context, actionFilters);
-                //await context.Response.WriteAsync("123");
             });
         }
     }

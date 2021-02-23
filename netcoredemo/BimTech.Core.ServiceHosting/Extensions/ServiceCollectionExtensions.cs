@@ -50,13 +50,10 @@ namespace BimTech.Core.ServiceHosting.Extensions
 
         public static IServiceCollection AddRuntime(this IServiceCollection services)
         {
-            var assemblys = GetReferenceAssembly();
-            var types = assemblys.SelectMany(i => i.ExportedTypes).ToArray();
-          
-            ServiceTokenGenerator serviceTokenGenerator = new ServiceTokenGenerator();
-            serviceTokenGenerator.GeneratorToken("True");
             services.AddSingleton(typeof(CPlatformContainer), new CPlatformContainer(ServiceLocator.Current));
             //注册服务token生成接口 
+            ServiceTokenGenerator serviceTokenGenerator = new ServiceTokenGenerator();
+            serviceTokenGenerator.GeneratorToken("True");
             services.AddSingleton(typeof(IServiceTokenGenerator), serviceTokenGenerator);
             //注册服务器路由接口 
             services.AddSingleton<IServiceRouteProvider, DefaultServiceRouteProvider>();
@@ -64,16 +61,15 @@ namespace BimTech.Core.ServiceHosting.Extensions
             services.AddSingleton<IServiceIdGenerator, DefaultServiceIdGenerator>();
             services.AddSingleton<ITypeConvertibleService, DefaultTypeConvertibleService>();
             services.AddSingleton<IValidationProcessor, DefaultValidationProcessor>();
+            services.AddSingleton<IClrServiceEntryFactory, ClrServiceEntryFactory>();
             var provider = services.BuildServiceProvider();
-            var clrServiceEntryFactory = new ClrServiceEntryFactory(provider.GetService<CPlatformContainer>(), provider.GetService<IServiceIdGenerator>(), provider.GetService<ITypeConvertibleService>(), provider.GetService<IValidationProcessor>());
-            services.AddSingleton(typeof(IClrServiceEntryFactory), clrServiceEntryFactory);
-            provider = services.BuildServiceProvider();
-            //services.AddSingleton<IClrServiceEntryFactory, ClrServiceEntryFactory>();
-            var attributeServiceEntryProvider=  new AttributeServiceEntryProvider(types, provider.GetService<IClrServiceEntryFactory>());
+            services.AddSingleton<IClrServiceEntryFactory, ClrServiceEntryFactory>();
+            var assemblys = GetReferenceAssembly();
+            var types = assemblys.SelectMany(i => i.ExportedTypes).ToArray();
+            var attributeServiceEntryProvider = new AttributeServiceEntryProvider(types, provider.GetService<IClrServiceEntryFactory>());
             services.AddSingleton(typeof(IServiceEntryProvider), attributeServiceEntryProvider);
             services.AddSingleton<IServiceEntryManager, DefaultServiceEntryManager>();
             services.AddSingleton<IServiceEntryLocate, DefaultServiceEntryLocate>();
-           
             services.AddSingleton<IAuthorizationFilter, AuthorizationAttribute>();
             services.AddSingleton<IFilter, AuthorizationAttribute>();
             services.AddSingleton<IServiceExecutor, HttpExecutor>();
@@ -104,7 +100,6 @@ namespace BimTech.Core.ServiceHosting.Extensions
             var configInfo = new ConfigInfo(null);
             var config = GetConfigInfo(configInfo);
           var defaultConsulClientProvider= new DefaultConsulClientProvider(config, provider.GetService<IHealthCheckService>(), provider.GetService<IConsulAddressSelector>());
-         
             services.AddSingleton(typeof(IConsulClientProvider), defaultConsulClientProvider);
             var clientWatchManager = new ClientWatchManager(config);
             services.AddSingleton(typeof(IClientWatchManager), clientWatchManager);

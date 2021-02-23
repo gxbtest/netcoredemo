@@ -11,7 +11,7 @@ namespace BimTech.Modules.Test
     {
         public Task<string> Test()
         {
-            return Task<string>.FromResult("qertt");
+            return Task<string>.FromResult(Guid.NewGuid().ToString());
         }
     }
 }

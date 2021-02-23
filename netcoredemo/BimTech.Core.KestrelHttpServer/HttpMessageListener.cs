@@ -49,6 +49,10 @@ namespace BimTech.Core.KestrelHttpServer
             //RestContext.GetContext().RemoveContextParameters("route");
             var path = HttpUtility.UrlDecode(GetRoutePath(context.Request.Path.ToString()));
               var  serviceRoute = await _serviceRouteProvider.GetRouteByPathRegex(path);
+            if(serviceRoute==null)
+            {
+                throw new Exception("路由找不到");
+            }
             IDictionary<string, object> parameters = context.Request.Query.ToDictionary(p => p.Key, p => (object)p.Value.ToString());
             object serviceKey = null;
             foreach (var key in _serviceKeys)
